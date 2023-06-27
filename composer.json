@@ -1,0 +1,18 @@
+{
+    "name": "connected-company/symfony-brevo-bundle",
+    "description": "Client Brevo pour gérer les emails et contacts",
+    "type": "symfony-bundle",
+    "autoload": {
+        "psr-4": {
+            "Connected\\BrevoBundle\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "symfony/http-client": "6.*",
+        "symfony/security-bundle": "6.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.1"
+    }
+}
