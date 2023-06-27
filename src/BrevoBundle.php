@@ -1,6 +1,6 @@
 <?php
 
-namespace Connected\JupiterBundle;
+namespace Connected\BrevoBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
