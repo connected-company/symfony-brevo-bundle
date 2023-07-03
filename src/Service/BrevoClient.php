@@ -58,7 +58,7 @@ class BrevoClient implements BrevoClientInterface
         try {
             $response = $this->client->request('POST', $this->apiUrl . 'contacts', ['json' => json_decode($createContact, false, 512, JSON_THROW_ON_ERROR)]);
 
-            if (is_null($response->getContent())) {
+            if (!$response->getContent()) {
                 return null;
             }
 
@@ -80,7 +80,7 @@ class BrevoClient implements BrevoClientInterface
         try {
             $response = $this->client->request('GET', $this->apiUrl . 'contacts/' . $identifier);
 
-            if (is_null($response->getContent())) {
+            if (!$response->getContent()) {
                 return null;
             }
 
